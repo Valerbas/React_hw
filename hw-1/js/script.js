@@ -31,7 +31,7 @@ function convertSubjectsToString(obj) {
     for (let i in obj) {
         result += `${i}, `
     }
-    console.log(result);
+    return result
 }
 
 convertSubjectsToString(subjects)
