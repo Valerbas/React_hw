@@ -9,6 +9,19 @@
 // 6. Создать функцию, которая бы принимала массив пользователей и отдавала бы  строку с
 // названиями марок автомобилей через запятую
 
+type Users = {
+    name: string
+    phone: string
+    email: string
+    animals?: Cat
+    cars?: Cars
+    hasChildren: boolean
+    hasEducation: boolean
+}
+
+type Cars = Array<"bmw" | "audi">
+type Cat = Array<"cat">
+
 const users: Users[] = [
     {
         name: "Harry Felton",
@@ -36,20 +49,6 @@ const users: Users[] = [
     }
 ]
 
-
-// task 1
-
-type Users = {
-    name: string
-    phone: string
-    email: string
-    animals?: Array<"cat">
-    cars?: Cars
-    hasChildren: boolean
-    hasEducation: boolean
-}
-
-type Cars = Array<"bmw" | "audi">
 
 // task 2
 
